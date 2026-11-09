@@ -12,6 +12,7 @@ async function showRelease() {
       return;
     }
 
+    if (typeof release.appStoreURL !== "string") throw new Error("Invalid App Store URL");
     const url = new URL(release.appStoreURL);
     if (url.origin !== "https://apps.apple.com" || url.username || url.password ||
         !/^\/(?:[a-z]{2}\/)?app\/(?:[^/]+\/)?id[1-9]\d*\/?$/.test(url.pathname) ||

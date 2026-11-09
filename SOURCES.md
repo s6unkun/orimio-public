@@ -40,12 +40,10 @@
 | 国土地理院 新着情報 | [配信元](https://www.gsi.go.jp/GSI/rss.htm) |
 | 東京都防災ホームページ | [配信元](https://www.bousai.metro.tokyo.lg.jp/sub/1000627.html) |
 | 大阪府 新着情報 | [配信元](https://www.pref.osaka.lg.jp/) |
-| 北海道 新着情報 | [配信元](https://www.pref.hokkaido.lg.jp/) |
 | JAXA プレスリリース | [配信元](https://www.jaxa.jp/press/about/index_j.html) |
 | 理化学研究所 プレスリリース | [配信元](https://www.riken.jp/pr/services/) |
 | 防災科学技術研究所 新着情報 | [配信元](https://www.bosai.go.jp/) |
-| 科学技術・学術政策研究所 新着情報 | [配信元](https://www.nistep.go.jp/) |
-| サイエンスポータル | [配信元](https://scienceportal.jst.go.jp/) |
+| サイエンスポータル（JST） | [配信元](https://scienceportal.jst.go.jp/) |
 | PMDA 安全対策 | [配信元](https://www.pmda.go.jp/) |
 | 地球環境研究センターニュース | [配信元](https://www.cger.nies.go.jp/cgernews/rss/) |
 | 神戸大学 ニュース | [配信元](https://www.kobe-u.ac.jp/ja/site/feeds/) |
@@ -67,3 +65,5 @@
 | 三鷹の森ジブリ美術館 | [配信元](https://www.ghibli-museum.jp/) |
 | FILMAGA | [配信元](https://filmaga.filmarks.com/) |
 | PONY CANYON NEWS | [配信元](https://news.ponycanyon.co.jp/) |
+| 日本銀行 新着情報 | [配信元](https://www.boj.or.jp/about/abouthp.htm) |
+| 東京農工大学 研究成果 | [配信元](https://www.tuat.ac.jp/about_rss/rss.html) |

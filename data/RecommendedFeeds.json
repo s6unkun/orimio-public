@@ -600,23 +600,6 @@
     "displayOrder": 390
   },
   {
-    "id": "hokkaido-pref-news",
-    "siteName": "北海道 新着情報",
-    "shortDescription": "北海道の施策や道民向けのお知らせ。",
-    "feedURL": "https://www.pref.hokkaido.lg.jp/news/rss.xml",
-    "themeIDs": [
-      "news-society",
-      "lifestyle"
-    ],
-    "keywords": [
-      "北海道",
-      "道政",
-      "道庁",
-      "地域"
-    ],
-    "displayOrder": 400
-  },
-  {
     "id": "jaxa-press",
     "siteName": "JAXA プレスリリース",
     "shortDescription": "宇宙探査や人工衛星、航空技術に関する発表。",
@@ -670,25 +653,8 @@
     "displayOrder": 430
   },
   {
-    "id": "nistep-news",
-    "siteName": "科学技術・学術政策研究所 新着情報",
-    "shortDescription": "研究開発や科学技術政策に関する調査報告やお知らせ。",
-    "feedURL": "https://www.nistep.go.jp/feed/",
-    "themeIDs": [
-      "science",
-      "business"
-    ],
-    "keywords": [
-      "NISTEP",
-      "科学技術政策",
-      "研究開発",
-      "科学技術指標"
-    ],
-    "displayOrder": 440
-  },
-  {
     "id": "science-portal",
-    "siteName": "サイエンスポータル",
+    "siteName": "サイエンスポータル（JST）",
     "shortDescription": "科学技術の研究成果を伝えるニュースや解説記事。",
     "feedURL": "https://scienceportal.jst.go.jp/feed/rss.xml",
     "themeIDs": [
@@ -1051,5 +1017,38 @@
       "アニメ"
     ],
     "displayOrder": 680
+  },
+  {
+    "id": "boj-news",
+    "siteName": "日本銀行 新着情報",
+    "shortDescription": "金融政策や統計、公表資料など、日本銀行の新着情報。",
+    "feedURL": "https://www.boj.or.jp/rss/whatsnew.xml",
+    "themeIDs": [
+      "business",
+      "news-society"
+    ],
+    "keywords": [
+      "日銀",
+      "BOJ",
+      "金融政策",
+      "経済"
+    ],
+    "displayOrder": 690
+  },
+  {
+    "id": "tuat-research",
+    "siteName": "東京農工大学 研究成果",
+    "shortDescription": "農学や工学を中心とした東京農工大学の研究成果。",
+    "feedURL": "https://www.tuat.ac.jp/NEWS/research/rss.xml",
+    "themeIDs": [
+      "science"
+    ],
+    "keywords": [
+      "東京農工大学",
+      "農学",
+      "工学",
+      "大学研究"
+    ],
+    "displayOrder": 700
   }
 ]
