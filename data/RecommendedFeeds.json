@@ -1,0 +1,1055 @@
+[
+  {
+    "id": "digital-agency-news",
+    "siteName": "デジタル庁 新着・更新",
+    "shortDescription": "行政のデジタル化に関する施策やサービスの更新情報。",
+    "feedURL": "https://www.digital.go.jp/rss/news.xml",
+    "themeIDs": [
+      "news-society",
+      "apps-web"
+    ],
+    "keywords": [
+      "行政",
+      "デジタル",
+      "公共サービス"
+    ],
+    "displayOrder": 10
+  },
+  {
+    "id": "yahoo-news-topics",
+    "siteName": "Yahoo!ニュース トピックス",
+    "shortDescription": "編集部が選んだ主要ニュースの見出し。",
+    "feedURL": "https://news.yahoo.co.jp/rss/topics/top-picks.xml",
+    "themeIDs": [
+      "news-society"
+    ],
+    "keywords": [
+      "ヤフー",
+      "ヤフーニュース",
+      "主要ニュース"
+    ],
+    "displayOrder": 20
+  },
+  {
+    "id": "impress-watch",
+    "siteName": "Impress Watch",
+    "shortDescription": "テクノロジーやビジネス、暮らしに関するニュース。",
+    "feedURL": "https://www.watch.impress.co.jp/data/rss/1.0/ipw/feed.rdf",
+    "themeIDs": [
+      "apps-web",
+      "gadgets",
+      "business"
+    ],
+    "keywords": [
+      "インプレス",
+      "インプレスウォッチ",
+      "IT"
+    ],
+    "displayOrder": 30
+  },
+  {
+    "id": "ascii-jp",
+    "siteName": "ASCII.jp",
+    "shortDescription": "パソコンやデジタル機器、ITに関する記事。",
+    "feedURL": "https://ascii.jp/rss.xml",
+    "themeIDs": [
+      "gadgets",
+      "apps-web"
+    ],
+    "keywords": [
+      "アスキー",
+      "パソコン",
+      "PC"
+    ],
+    "displayOrder": 40
+  },
+  {
+    "id": "developersio",
+    "siteName": "DevelopersIO",
+    "shortDescription": "クラウドやソフトウェア開発に関する技術記事。",
+    "feedURL": "https://dev.classmethod.jp/feed/",
+    "themeIDs": [
+      "programming",
+      "apps-web"
+    ],
+    "keywords": [
+      "クラスメソッド",
+      "クラウド",
+      "AWS"
+    ],
+    "displayOrder": 50
+  },
+  {
+    "id": "smhn",
+    "siteName": "すまほん!!",
+    "shortDescription": "スマートフォンや周辺機器のニュース、使用レビュー、メーカーへの取材記事が読めます。",
+    "feedURL": "https://smhn.info/feed",
+    "themeIDs": [
+      "gadgets",
+      "apps-web"
+    ],
+    "keywords": [
+      "すまほん",
+      "スマホン",
+      "smhn",
+      "スマートフォン",
+      "Android",
+      "iPhone",
+      "レビュー"
+    ],
+    "displayOrder": 60
+  },
+  {
+    "id": "gizmodo-japan",
+    "siteName": "ギズモード・ジャパン",
+    "shortDescription": "新しいガジェットや家電の紹介から、身近なテクノロジーの使い方までを扱います。",
+    "feedURL": "https://www.gizmodo.jp/feed/index.xml",
+    "themeIDs": [
+      "gadgets",
+      "apps-web",
+      "ai"
+    ],
+    "keywords": [
+      "ガジェット",
+      "家電",
+      "スマートフォン",
+      "テクノロジー"
+    ],
+    "displayOrder": 70
+  },
+  {
+    "id": "gigazine",
+    "siteName": "GIGAZINE",
+    "shortDescription": "インターネットの話題、科学の研究成果、製品を実際に試した記事などを配信します。",
+    "feedURL": "https://gigazine.net/news/rss_2.0/",
+    "themeIDs": [
+      "gadgets",
+      "apps-web",
+      "science"
+    ],
+    "keywords": [
+      "IT",
+      "インターネット",
+      "科学",
+      "レビュー"
+    ],
+    "displayOrder": 80
+  },
+  {
+    "id": "mobilelaby",
+    "siteName": "携帯総合研究所",
+    "shortDescription": "スマートフォンの機種や料金を比較し、OSやアプリの更新を伝えるメディアです。",
+    "feedURL": "https://mobilelaby.com/feed",
+    "themeIDs": [
+      "gadgets",
+      "apps-web"
+    ],
+    "keywords": [
+      "スマートフォン",
+      "iPhone",
+      "Android",
+      "携帯料金"
+    ],
+    "displayOrder": 90
+  },
+  {
+    "id": "taisy0",
+    "siteName": "気になる、記になる…",
+    "shortDescription": "AppleやMicrosoftを中心に、端末、OS、アプリの動きを追うブログです。",
+    "feedURL": "https://taisy0.com/feed",
+    "themeIDs": [
+      "gadgets",
+      "apps-web"
+    ],
+    "keywords": [
+      "Apple",
+      "Microsoft",
+      "Mac",
+      "Windows",
+      "アプリ"
+    ],
+    "displayOrder": 100
+  },
+  {
+    "id": "gadget-shot",
+    "siteName": "ガジェットショット",
+    "shortDescription": "スマートフォンやウェアラブル端末を使い、機種や周辺機器の使い勝手を紹介します。",
+    "feedURL": "https://gadget-shot.com/feed",
+    "themeIDs": [
+      "gadgets"
+    ],
+    "keywords": [
+      "スマートフォン",
+      "周辺機器",
+      "ウェアラブル",
+      "レビュー"
+    ],
+    "displayOrder": 110
+  },
+  {
+    "id": "gadget-touch",
+    "siteName": "ガジェットタッチ",
+    "shortDescription": "デスク環境やカメラ、オーディオ機器など、身の回りの道具をレビューする個人ブログです。",
+    "feedURL": "https://gadget-touch.info/feed/",
+    "themeIDs": [
+      "gadgets",
+      "lifestyle"
+    ],
+    "keywords": [
+      "デスク環境",
+      "カメラ",
+      "オーディオ",
+      "周辺機器"
+    ],
+    "displayOrder": 120
+  },
+  {
+    "id": "publickey",
+    "siteName": "Publickey",
+    "shortDescription": "クラウドやデータベース、ソフトウェア開発ツールの新機能や業界の動きを伝えます。",
+    "feedURL": "https://www.publickey1.jp/atom.xml",
+    "themeIDs": [
+      "programming",
+      "ai"
+    ],
+    "keywords": [
+      "クラウド",
+      "データベース",
+      "開発ツール",
+      "オープンソース"
+    ],
+    "displayOrder": 130
+  },
+  {
+    "id": "zenn-trending",
+    "siteName": "Zenn トレンド",
+    "shortDescription": "エンジニアが実装や運用で得た知見を投稿するZennから、注目の記事が届きます。",
+    "feedURL": "https://zenn.dev/feed",
+    "themeIDs": [
+      "programming",
+      "apps-web"
+    ],
+    "keywords": [
+      "開発",
+      "プログラミング",
+      "技術記事",
+      "トレンド"
+    ],
+    "displayOrder": 140
+  },
+  {
+    "id": "qiita-trending",
+    "siteName": "Qiita トレンド",
+    "shortDescription": "Qiitaで注目を集めているプログラミングや開発環境の記事を追えます。",
+    "feedURL": "https://qiita.com/popular-items/feed",
+    "themeIDs": [
+      "programming",
+      "apps-web"
+    ],
+    "keywords": [
+      "エンジニア",
+      "技術記事",
+      "プログラミング",
+      "トレンド"
+    ],
+    "displayOrder": 150
+  },
+  {
+    "id": "cybozu-tech",
+    "siteName": "サイボウズのTech系ブログ",
+    "shortDescription": "サイボウズが運営する複数の技術ブログから、開発やエンジニアの活動に関する更新が届きます。",
+    "feedURL": "https://cybozu.github.io/tech-blog-rss-feed/feeds/rss.xml",
+    "themeIDs": [
+      "programming"
+    ],
+    "keywords": [
+      "サイボウズ",
+      "フロントエンド",
+      "kintone",
+      "開発"
+    ],
+    "displayOrder": 160
+  },
+  {
+    "id": "dena-engineering",
+    "siteName": "DeNA Engineering Blog",
+    "shortDescription": "DeNAのエンジニアが、サービス開発やデータ活用の取り組みを紹介します。",
+    "feedURL": "https://engineering.dena.com/blog/index.xml",
+    "themeIDs": [
+      "programming",
+      "ai"
+    ],
+    "keywords": [
+      "DeNA",
+      "開発",
+      "データ分析",
+      "機械学習"
+    ],
+    "displayOrder": 170
+  },
+  {
+    "id": "smarthr-tech",
+    "siteName": "SmartHR Tech Blog",
+    "shortDescription": "SmartHRの開発チームが、Webサービスの実装や開発体制づくりについて発信します。",
+    "feedURL": "https://tech.smarthr.jp/rss",
+    "themeIDs": [
+      "programming",
+      "apps-web"
+    ],
+    "keywords": [
+      "SmartHR",
+      "SaaS",
+      "Ruby",
+      "Web開発"
+    ],
+    "displayOrder": 180
+  },
+  {
+    "id": "ipa-security",
+    "siteName": "IPA 重要なセキュリティ情報",
+    "shortDescription": "広く利用されるソフトウェアの脆弱性や、利用者が取れる対策を伝えます。",
+    "feedURL": "https://www.ipa.go.jp/security/alert-rss.rdf",
+    "themeIDs": [
+      "programming",
+      "apps-web"
+    ],
+    "keywords": [
+      "IPA",
+      "脆弱性",
+      "セキュリティ",
+      "注意喚起"
+    ],
+    "displayOrder": 210
+  },
+  {
+    "id": "jpcert-cc",
+    "siteName": "JPCERT/CC 統合版RSS",
+    "shortDescription": "セキュリティの注意喚起、脆弱性情報、セミナーや資料公開のお知らせをまとめて購読できます。",
+    "feedURL": "https://www.jpcert.or.jp/rss/jpcert-all.rdf",
+    "themeIDs": [
+      "programming",
+      "apps-web"
+    ],
+    "keywords": [
+      "JPCERT",
+      "JVN",
+      "脆弱性",
+      "セキュリティ"
+    ],
+    "displayOrder": 220
+  },
+  {
+    "id": "ics-media",
+    "siteName": "ICS MEDIA",
+    "shortDescription": "HTMLやCSS、JavaScriptの実装例を通じて、フロントエンド開発の手法を紹介します。",
+    "feedURL": "https://ics.media/feed/atom.xml",
+    "themeIDs": [
+      "programming",
+      "apps-web"
+    ],
+    "keywords": [
+      "フロントエンド",
+      "CSS",
+      "JavaScript",
+      "Web制作"
+    ],
+    "displayOrder": 240
+  },
+  {
+    "id": "coliss",
+    "siteName": "コリス",
+    "shortDescription": "Web制作に使えるCSSの手法や、デザイン素材、フォントを紹介します。",
+    "feedURL": "https://coliss.com/feed/",
+    "themeIDs": [
+      "programming",
+      "apps-web"
+    ],
+    "keywords": [
+      "Web制作",
+      "CSS",
+      "デザイン",
+      "フォント"
+    ],
+    "displayOrder": 250
+  },
+  {
+    "id": "webcreatorbox",
+    "siteName": "Webクリエイターボックス",
+    "shortDescription": "Webデザインの実例やCSSの書き方、制作に使うツールを紹介するブログです。",
+    "feedURL": "https://www.webcreatorbox.com/feed",
+    "themeIDs": [
+      "programming",
+      "apps-web"
+    ],
+    "keywords": [
+      "Webデザイン",
+      "フロントエンド",
+      "CSS",
+      "制作ツール"
+    ],
+    "displayOrder": 260
+  },
+  {
+    "id": "zenn-ai",
+    "siteName": "Zenn AIトピック",
+    "shortDescription": "ZennのAIトピックに投稿された、生成AIや機械学習の実装・活用記事を追えます。",
+    "feedURL": "https://zenn.dev/topics/ai/feed",
+    "themeIDs": [
+      "ai",
+      "programming"
+    ],
+    "keywords": [
+      "AI",
+      "生成AI",
+      "LLM",
+      "機械学習"
+    ],
+    "displayOrder": 270
+  },
+  {
+    "id": "aismiley",
+    "siteName": "AIsmiley AIニュース",
+    "shortDescription": "生成AIなどの製品やサービスの発表、企業や自治体での導入事例を紹介します。",
+    "feedURL": "https://aismiley.co.jp/ai_news/feed/",
+    "themeIDs": [
+      "ai",
+      "business"
+    ],
+    "keywords": [
+      "生成AI",
+      "AI製品",
+      "導入事例",
+      "DX"
+    ],
+    "displayOrder": 280
+  },
+  {
+    "id": "riken-aip-events",
+    "siteName": "理化学研究所 革新知能統合研究センター イベント",
+    "shortDescription": "理化学研究所の革新知能統合研究センターが、AI研究に関するセミナーや公開イベントを案内します。",
+    "feedURL": "https://aip.riken.jp/events/feed/?lang=ja",
+    "themeIDs": [
+      "ai",
+      "science"
+    ],
+    "keywords": [
+      "理化学研究所",
+      "AIP",
+      "人工知能",
+      "研究",
+      "セミナー"
+    ],
+    "displayOrder": 290
+  },
+  {
+    "id": "jsai-elsi",
+    "siteName": "人工知能学会 倫理委員会 お知らせ",
+    "shortDescription": "人工知能の研究や利用に伴う倫理的な課題について、委員会の声明や活動のお知らせが届きます。",
+    "feedURL": "https://www.ai-gakkai.or.jp/ai-elsi/feed?post_type=info",
+    "themeIDs": [
+      "ai",
+      "science"
+    ],
+    "keywords": [
+      "人工知能学会",
+      "AI倫理",
+      "研究倫理",
+      "生成AI"
+    ],
+    "displayOrder": 300
+  },
+  {
+    "id": "gihyo-jp",
+    "siteName": "gihyo.jp",
+    "shortDescription": "技術評論社が、プログラミングやWeb開発、機械学習の記事を配信します。",
+    "feedURL": "https://gihyo.jp/feed/rss2",
+    "themeIDs": [
+      "programming",
+      "ai",
+      "apps-web"
+    ],
+    "keywords": [
+      "技術評論社",
+      "プログラミング",
+      "機械学習",
+      "Web開発"
+    ],
+    "displayOrder": 310
+  },
+  {
+    "id": "fsa-news",
+    "siteName": "金融庁 新着情報",
+    "shortDescription": "金融行政に関する報道発表や制度の更新情報。",
+    "feedURL": "https://www.fsa.go.jp/fsaNewsListAll_rss2.xml",
+    "themeIDs": [
+      "business",
+      "news-society"
+    ],
+    "keywords": [
+      "金融庁",
+      "FSA",
+      "金融行政",
+      "金融規制"
+    ],
+    "displayOrder": 320
+  },
+  {
+    "id": "mof-news",
+    "siteName": "財務省 新着情報",
+    "shortDescription": "財政や税制、国債に関する財務省の新着情報。",
+    "feedURL": "https://www.mof.go.jp/news.rss",
+    "themeIDs": [
+      "business",
+      "news-society"
+    ],
+    "keywords": [
+      "財務省",
+      "財政",
+      "予算",
+      "国債"
+    ],
+    "displayOrder": 330
+  },
+  {
+    "id": "e-gov-news",
+    "siteName": "e-Govポータル お知らせ",
+    "shortDescription": "行政手続きや法令検索など、e-Govのサービスに関するお知らせ。",
+    "feedURL": "https://www.e-gov.go.jp/news/news.xml",
+    "themeIDs": [
+      "news-society",
+      "apps-web"
+    ],
+    "keywords": [
+      "イーガブ",
+      "電子申請",
+      "行政手続き",
+      "法令"
+    ],
+    "displayOrder": 350
+  },
+  {
+    "id": "ndl-news",
+    "siteName": "国立国会図書館 お知らせ",
+    "shortDescription": "国立国会図書館のサービスや催しに関するお知らせ。",
+    "feedURL": "https://www.ndl.go.jp/rss/hp/search-news.xml?tag=News",
+    "themeIDs": [
+      "news-society",
+      "lifestyle",
+      "books"
+    ],
+    "keywords": [
+      "国会図書館",
+      "NDL",
+      "図書館",
+      "資料",
+      "本"
+    ],
+    "displayOrder": 360
+  },
+  {
+    "id": "gsi-news",
+    "siteName": "国土地理院 新着情報",
+    "shortDescription": "地図や測量、災害時の地理情報に関するお知らせ。",
+    "feedURL": "https://www.gsi.go.jp/index.rdf",
+    "themeIDs": [
+      "science",
+      "news-society"
+    ],
+    "keywords": [
+      "国土地理院",
+      "GSI",
+      "地図",
+      "測量",
+      "地理"
+    ],
+    "displayOrder": 370
+  },
+  {
+    "id": "tokyo-disaster",
+    "siteName": "東京都防災ホームページ",
+    "shortDescription": "東京都の防災施策や災害への備えに関する更新情報。",
+    "feedURL": "https://www.bousai.metro.tokyo.lg.jp/news.rss",
+    "themeIDs": [
+      "news-society",
+      "lifestyle"
+    ],
+    "keywords": [
+      "東京都",
+      "防災",
+      "減災",
+      "帰宅困難",
+      "備蓄"
+    ],
+    "displayOrder": 380
+  },
+  {
+    "id": "osaka-pref-news",
+    "siteName": "大阪府 新着情報",
+    "shortDescription": "大阪府の報道発表や府民向けのお知らせ。",
+    "feedURL": "https://www.pref.osaka.lg.jp/shinchaku/shinchaku.xml",
+    "themeIDs": [
+      "news-society",
+      "lifestyle"
+    ],
+    "keywords": [
+      "大阪",
+      "大阪府",
+      "府政",
+      "関西"
+    ],
+    "displayOrder": 390
+  },
+  {
+    "id": "hokkaido-pref-news",
+    "siteName": "北海道 新着情報",
+    "shortDescription": "北海道の施策や道民向けのお知らせ。",
+    "feedURL": "https://www.pref.hokkaido.lg.jp/news/rss.xml",
+    "themeIDs": [
+      "news-society",
+      "lifestyle"
+    ],
+    "keywords": [
+      "北海道",
+      "道政",
+      "道庁",
+      "地域"
+    ],
+    "displayOrder": 400
+  },
+  {
+    "id": "jaxa-press",
+    "siteName": "JAXA プレスリリース",
+    "shortDescription": "宇宙探査や人工衛星、航空技術に関する発表。",
+    "feedURL": "https://www.jaxa.jp/rss/press_j.rdf",
+    "themeIDs": [
+      "science",
+      "news-society"
+    ],
+    "keywords": [
+      "JAXA",
+      "ジャクサ",
+      "宇宙",
+      "人工衛星",
+      "ロケット"
+    ],
+    "displayOrder": 410
+  },
+  {
+    "id": "riken-press",
+    "siteName": "理化学研究所 プレスリリース",
+    "shortDescription": "理化学研究所が発表する基礎研究や技術開発の成果。",
+    "feedURL": "https://www.riken.jp/feed/press_feed/",
+    "themeIDs": [
+      "science"
+    ],
+    "keywords": [
+      "理研",
+      "RIKEN",
+      "基礎研究",
+      "生命科学",
+      "物理"
+    ],
+    "displayOrder": 420
+  },
+  {
+    "id": "nied-news",
+    "siteName": "防災科学技術研究所 新着情報",
+    "shortDescription": "地震や火山、気象災害に関する研究成果や研究所からのお知らせ。",
+    "feedURL": "https://www.bosai.go.jp/rss.xml",
+    "themeIDs": [
+      "science",
+      "news-society"
+    ],
+    "keywords": [
+      "防災科研",
+      "NIED",
+      "地震",
+      "火山",
+      "気象災害"
+    ],
+    "displayOrder": 430
+  },
+  {
+    "id": "nistep-news",
+    "siteName": "科学技術・学術政策研究所 新着情報",
+    "shortDescription": "研究開発や科学技術政策に関する調査報告やお知らせ。",
+    "feedURL": "https://www.nistep.go.jp/feed/",
+    "themeIDs": [
+      "science",
+      "business"
+    ],
+    "keywords": [
+      "NISTEP",
+      "科学技術政策",
+      "研究開発",
+      "科学技術指標"
+    ],
+    "displayOrder": 440
+  },
+  {
+    "id": "science-portal",
+    "siteName": "サイエンスポータル",
+    "shortDescription": "科学技術の研究成果を伝えるニュースや解説記事。",
+    "feedURL": "https://scienceportal.jst.go.jp/feed/rss.xml",
+    "themeIDs": [
+      "science"
+    ],
+    "keywords": [
+      "JST",
+      "科学技術振興機構",
+      "科学ニュース",
+      "研究"
+    ],
+    "displayOrder": 450
+  },
+  {
+    "id": "pmda-safety",
+    "siteName": "PMDA 安全対策",
+    "shortDescription": "医薬品や医療機器の安全対策に関する更新情報。",
+    "feedURL": "https://www.pmda.go.jp/rss_018.xml",
+    "themeIDs": [
+      "lifestyle",
+      "news-society"
+    ],
+    "keywords": [
+      "PMDA",
+      "医薬品医療機器総合機構",
+      "医薬品",
+      "医療機器",
+      "安全性"
+    ],
+    "displayOrder": 470
+  },
+  {
+    "id": "nies-cger-news",
+    "siteName": "地球環境研究センターニュース",
+    "shortDescription": "気候変動の観測や地球環境の研究を紹介する記事。",
+    "feedURL": "https://www.cger.nies.go.jp/cgernews/rss/index.xml",
+    "themeIDs": [
+      "science"
+    ],
+    "keywords": [
+      "国立環境研究所",
+      "NIES",
+      "CGER",
+      "気候変動",
+      "地球環境"
+    ],
+    "displayOrder": 480
+  },
+  {
+    "id": "kobe-university-news",
+    "siteName": "神戸大学 ニュース",
+    "shortDescription": "神戸大学の研究成果や大学の取り組みに関するニュース。",
+    "feedURL": "https://www.kobe-u.ac.jp/ja/news/article/rss.xml",
+    "themeIDs": [
+      "science",
+      "news-society"
+    ],
+    "keywords": [
+      "神戸大学",
+      "神大",
+      "研究成果",
+      "大学"
+    ],
+    "displayOrder": 490
+  },
+  {
+    "id": "4gamer",
+    "siteName": "4Gamer.net",
+    "shortDescription": "家庭用・PC・スマートフォン向けゲームのニュースやレビューを届けます。",
+    "feedURL": "https://www.4gamer.net/rss/index.xml",
+    "themeIDs": [
+      "games"
+    ],
+    "keywords": [
+      "4Gamer",
+      "フォーゲーマー",
+      "PCゲーム"
+    ],
+    "displayOrder": 500
+  },
+  {
+    "id": "game-watch",
+    "siteName": "GAME Watch",
+    "shortDescription": "ゲームの発売情報やイベント、周辺機器の動向を追えます。",
+    "feedURL": "https://game.watch.impress.co.jp/data/rss/1.0/gmw/feed.rdf",
+    "themeIDs": [
+      "games"
+    ],
+    "keywords": [
+      "GAME Watch",
+      "ゲームウォッチ",
+      "家庭用ゲーム"
+    ],
+    "displayOrder": 510
+  },
+  {
+    "id": "travel-watch",
+    "siteName": "トラベル Watch",
+    "shortDescription": "航空や鉄道、宿泊施設など、旅の計画に関わるニュースを届けます。",
+    "feedURL": "https://travel.watch.impress.co.jp/data/rss/1.0/trw/feed.rdf",
+    "themeIDs": [
+      "travel"
+    ],
+    "keywords": [
+      "トラベルウォッチ",
+      "旅行",
+      "航空",
+      "鉄道"
+    ],
+    "displayOrder": 520
+  },
+  {
+    "id": "kaden-watch",
+    "siteName": "家電 Watch",
+    "shortDescription": "生活家電の新製品や使い方、実際に試したレビューを読めます。",
+    "feedURL": "https://kaden.watch.impress.co.jp/data/rss/1.0/kdw/feed.rdf",
+    "themeIDs": [
+      "lifestyle",
+      "gadgets"
+    ],
+    "keywords": [
+      "家電ウォッチ",
+      "生活家電",
+      "家電レビュー"
+    ],
+    "displayOrder": 530
+  },
+  {
+    "id": "dc-watch",
+    "siteName": "デジカメ Watch",
+    "shortDescription": "カメラやレンズの新製品、撮影の工夫や写真展の情報を届けます。",
+    "feedURL": "https://dc.watch.impress.co.jp/data/rss/1.0/dcw/feed.rdf",
+    "themeIDs": [
+      "lifestyle",
+      "gadgets"
+    ],
+    "keywords": [
+      "デジカメウォッチ",
+      "カメラ",
+      "写真",
+      "レンズ"
+    ],
+    "displayOrder": 540
+  },
+  {
+    "id": "av-watch",
+    "siteName": "AV Watch",
+    "shortDescription": "音響・映像機器のレビューや、音楽と映像の配信サービスの動向を追えます。",
+    "feedURL": "https://av.watch.impress.co.jp/data/rss/1.0/avw/feed.rdf",
+    "themeIDs": [
+      "music",
+      "film"
+    ],
+    "keywords": [
+      "AVウォッチ",
+      "オーディオ",
+      "映像",
+      "イヤホン"
+    ],
+    "displayOrder": 550
+  },
+  {
+    "id": "automaton",
+    "siteName": "AUTOMATON",
+    "shortDescription": "国内外のゲームニュースやレビューを、インディー作品も含めて届けます。",
+    "feedURL": "https://automaton-media.com/feed/",
+    "themeIDs": [
+      "games"
+    ],
+    "keywords": [
+      "AUTOMATON",
+      "オートマトン",
+      "インディーゲーム"
+    ],
+    "displayOrder": 560
+  },
+  {
+    "id": "nintendo-topics",
+    "siteName": "任天堂 トピックス",
+    "shortDescription": "任天堂のゲームの発売情報やイベント、作品を掘り下げる記事を読めます。",
+    "feedURL": "https://www.nintendo.com/jp/topics/c/feed/rss/",
+    "themeIDs": [
+      "games"
+    ],
+    "keywords": [
+      "任天堂",
+      "Nintendo",
+      "ニンテンドー",
+      "Switch"
+    ],
+    "displayOrder": 570
+  },
+  {
+    "id": "ndl-childrens-books",
+    "siteName": "国際子ども図書館 子どもと本に関するニュース",
+    "shortDescription": "児童文学賞や読書活動など、子どもの本をめぐる話題を届けます。",
+    "feedURL": "https://www.ndl.go.jp/rss/ilcl/search-news.xml?tag=%E5%AD%90%E3%81%A9%E3%82%82%E3%81%A8%E6%9C%AC%E3%81%AB%E9%96%A2%E3%81%99%E3%82%8B%E3%83%8B%E3%83%A5%E3%83%BC%E3%82%B9",
+    "themeIDs": [
+      "books"
+    ],
+    "keywords": [
+      "国際子ども図書館",
+      "児童書",
+      "絵本",
+      "児童文学"
+    ],
+    "displayOrder": 580
+  },
+  {
+    "id": "ndl-current-awareness",
+    "siteName": "カレントアウェアネス・ポータル",
+    "shortDescription": "国内外の図書館やデジタルアーカイブ、資料公開の動向を追えます。",
+    "feedURL": "https://current.ndl.go.jp/car-rss",
+    "themeIDs": [
+      "books"
+    ],
+    "keywords": [
+      "カレントアウェアネス",
+      "図書館",
+      "アーカイブ"
+    ],
+    "displayOrder": 590
+  },
+  {
+    "id": "macaroni",
+    "siteName": "macaroni",
+    "shortDescription": "日々の献立に使えるレシピや、食品・飲食店の新しい話題を届けます。",
+    "feedURL": "https://macaro-ni.jp/rss/pickup.rss",
+    "themeIDs": [
+      "food",
+      "lifestyle"
+    ],
+    "keywords": [
+      "macaroni",
+      "マカロニ",
+      "料理",
+      "レシピ",
+      "グルメ"
+    ],
+    "displayOrder": 610
+  },
+  {
+    "id": "jfa",
+    "siteName": "日本サッカー協会（JFA）",
+    "shortDescription": "日本代表や国内大会、育成年代のサッカーに関する公式ニュースを届けます。",
+    "feedURL": "https://www.jfa.jp/feed.rss",
+    "themeIDs": [
+      "lifestyle"
+    ],
+    "keywords": [
+      "JFA",
+      "日本サッカー協会",
+      "サッカー",
+      "日本代表",
+      "スポーツ"
+    ],
+    "displayOrder": 620
+  },
+  {
+    "id": "football-channel",
+    "siteName": "フットボールチャンネル",
+    "shortDescription": "国内外のサッカーについて、試合結果や選手の動向、解説記事を届けます。",
+    "feedURL": "https://www.footballchannel.jp/feed/",
+    "themeIDs": [
+      "lifestyle"
+    ],
+    "keywords": [
+      "フットボールチャンネル",
+      "サッカー",
+      "Jリーグ",
+      "海外サッカー",
+      "スポーツ"
+    ],
+    "displayOrder": 630
+  },
+  {
+    "id": "art-it",
+    "siteName": "ART iT",
+    "shortDescription": "現代美術の展覧会情報や作家へのインタビュー、批評を届けます。",
+    "feedURL": "https://www.art-it.asia/feed/",
+    "themeIDs": [
+      "lifestyle"
+    ],
+    "keywords": [
+      "ART iT",
+      "アートイット",
+      "現代美術",
+      "展覧会",
+      "美術"
+    ],
+    "displayOrder": 640
+  },
+  {
+    "id": "studio-ghibli",
+    "siteName": "スタジオジブリ",
+    "shortDescription": "スタジオジブリの作品や上映、関連イベントのお知らせを届けます。",
+    "feedURL": "https://www.ghibli.jp/index.xml",
+    "themeIDs": [
+      "anime-manga",
+      "film"
+    ],
+    "keywords": [
+      "ジブリ",
+      "スタジオジブリ",
+      "アニメーション",
+      "映画"
+    ],
+    "displayOrder": 650
+  },
+  {
+    "id": "ghibli-museum",
+    "siteName": "三鷹の森ジブリ美術館",
+    "shortDescription": "美術館の企画展示や短編上映、来館に関するお知らせを届けます。",
+    "feedURL": "https://www.ghibli-museum.jp/index.xml",
+    "themeIDs": [
+      "lifestyle",
+      "anime-manga"
+    ],
+    "keywords": [
+      "三鷹の森ジブリ美術館",
+      "ジブリ美術館",
+      "展覧会",
+      "アニメーション",
+      "美術"
+    ],
+    "displayOrder": 660
+  },
+  {
+    "id": "filmaga",
+    "siteName": "FILMAGA",
+    "shortDescription": "映画やドラマの紹介、新作の話題、作品を選ぶときに役立つ特集を届けます。",
+    "feedURL": "https://filmaga.filmarks.com/new/rss/",
+    "themeIDs": [
+      "film"
+    ],
+    "keywords": [
+      "FILMAGA",
+      "フィルマガ",
+      "Filmarks",
+      "映画",
+      "ドラマ"
+    ],
+    "displayOrder": 670
+  },
+  {
+    "id": "pony-canyon-news",
+    "siteName": "PONY CANYON NEWS",
+    "shortDescription": "ポニーキャニオンの音楽作品やライブ、アニメや映像作品の情報を届けます。",
+    "feedURL": "https://news.ponycanyon.co.jp/feed",
+    "themeIDs": [
+      "music",
+      "anime-manga",
+      "film"
+    ],
+    "keywords": [
+      "ポニーキャニオン",
+      "PONY CANYON",
+      "音楽",
+      "ライブ",
+      "アニメ"
+    ],
+    "displayOrder": 680
+  }
+]

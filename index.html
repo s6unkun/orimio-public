@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Orimio（オリミオ）は、好きなサイトの新着記事をまとめて読める、iPhone向けのRSSリーダーです。">
+  <meta name="theme-color" content="#f7f5ee">
+  <title>Orimio — iPhone向けRSSリーダー</title>
+  <link rel="icon" href="mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="release.js" defer></script>
+</head>
+<body>
+  <header class="shell masthead">
+    <a class="wordmark" href="./"><img src="mark.svg" alt="" width="36" height="36">Orimio</a>
+    <a class="header-link" href="#download">配信情報 <span aria-hidden="true">↗</span></a>
+  </header>
+  <main class="shell">
+    <section class="hero" aria-labelledby="intro">
+      <div class="hero-copy">
+        <p class="eyebrow">iPhone向け RSSリーダー</p>
+        <h1 id="intro">好きなサイトの<br>新着を、ひとつに。</h1>
+        <p class="intro">Orimio（オリミオ）は、ニュース、技術ブログ、趣味のサイトなど、購読したサイトの新着記事をまとめて読めるiPhoneアプリです。</p>
+        <a class="button" href="#download">配信情報を見る <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="cover" aria-hidden="true">
+        <span class="cover-label">ORIMIO / RSS READER</span>
+        <img src="mark.svg" alt="" width="280" height="280">
+        <span class="cover-caption">気になるサイトの更新を読む</span>
+      </div>
+    </section>
+    <section class="details" aria-labelledby="features">
+      <h2 id="features">Orimioでできること</h2>
+      <div class="features">
+        <article>
+          <h3>サイトを購読する</h3>
+          <p>おすすめのRSSを探すほか、サイトやRSSのURLを入力して追加できます。</p>
+        </article>
+        <article>
+          <h3>新着をまとめて読む</h3>
+          <p>購読したサイトの記事がひとつの一覧に並び、未読の記事を確認できます。</p>
+        </article>
+        <article>
+          <h3>あとで読み返す</h3>
+          <p>気になった記事をお気に入りに保存し、読み返せます。</p>
+        </article>
+      </div>
+    </section>
+    <section class="download" id="download" aria-labelledby="download-title">
+      <div>
+        <p class="eyebrow">iOS版</p>
+        <h2 id="download-title">ダウンロード</h2>
+        <p id="release-status" role="status">公開バージョン情報をご確認ください。</p>
+        <noscript><p><a href="data/app-version.json">公開バージョン情報を見る</a></p></noscript>
+      </div>
+      <a class="button" id="app-store-link" hidden>App Storeでダウンロード <span aria-hidden="true">↗</span></a>
+    </section>
+  </main>
+  <footer class="shell footer">
+    <span>Orimio</span>
+    <div>
+      <a href="data/RecommendedFeeds.json">公開RSSカタログ</a>
+      <a href="data/app-version.json">公開バージョン情報</a>
+    </div>
+  </footer>
+</body>
+</html>
