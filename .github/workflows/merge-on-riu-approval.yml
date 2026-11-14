@@ -1,0 +1,144 @@
+name: Merge on Riu approval
+
+on:
+  pull_request_review:
+    types: [submitted]
+
+permissions: {}
+
+jobs:
+  merge:
+    if: >-
+      github.event.review.state == 'approved' &&
+      github.event.review.user.id == 354714891 &&
+      github.event.pull_request.base.ref == 'main' &&
+      github.event.pull_request.head.repo.id == github.event.repository.id &&
+      !github.event.pull_request.draft
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    permissions:
+      contents: write
+      issues: write
+      pull-requests: read
+    steps:
+      - name: Merge the approved commit
+        id: merge_pr
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          pr_number=$(jq -er '.pull_request.number' "$GITHUB_EVENT_PATH")
+          review_id=$(jq -er '.review.id' "$GITHUB_EVENT_PATH")
+          approved_sha=$(jq -er '.review.commit_id | select(test("^[0-9a-f]{40}$"))' "$GITHUB_EVENT_PATH")
+          repo_id=$(jq -er '.repository.id' "$GITHUB_EVENT_PATH")
+          pr_endpoint="repos/$GITHUB_REPOSITORY/pulls/$pr_number"
+
+          if ! jq -e --arg sha "$approved_sha" '.pull_request.head.sha == $sha' "$GITHUB_EVENT_PATH" > /dev/null; then
+            echo 'Skipped: the review was not for the head at submission.'
+            exit 0
+          fi
+
+          require_installed() {
+            local ref=$1 workflow_type
+            local workflow_path="repos/$GITHUB_REPOSITORY/contents/.github/workflows/merge-on-riu-approval.yml"
+            if ! workflow_type=$(gh api "$workflow_path?ref=$ref" --jq '.type' 2>&1); then
+              if [[ "$workflow_type" == *'(HTTP 404)' ]]; then
+                echo "Skipped: auto-merge was not installed at $ref."
+                exit 0
+              fi
+              printf '%s\n' "$workflow_type" >&2
+              exit 1
+            fi
+            if [[ "$workflow_type" != file ]]; then
+              echo '::error::The workflow on main is not a file.'
+              exit 1
+            fi
+          }
+
+          require_installed main
+          # The first parent of the event's test merge commit is the main snapshot
+          # used for this run. An approval must not enable its own workflow.
+          event_base=$(gh api "repos/$GITHUB_REPOSITORY/git/commits/$GITHUB_SHA" \
+            --jq 'select((.parents | length) == 2) | .parents[0].sha')
+          if [[ ! "$event_base" =~ ^[0-9a-f]{40}$ ]]; then
+            echo '::error::Could not identify the base of the review event.'
+            exit 1
+          fi
+          require_installed "$event_base"
+
+          pr=$(gh api "$pr_endpoint")
+          if ! jq -e --argjson repo "$repo_id" --arg sha "$approved_sha" '
+            .state == "open" and .draft == false and .base.ref == "main" and
+            .base.repo.id == $repo and .head.repo.id == $repo and .head.sha == $sha
+          ' <<< "$pr" > /dev/null; then
+            echo 'Skipped: the PR is no longer eligible or its head has changed.'
+            exit 0
+          fi
+
+          reviews=$(gh api "$pr_endpoint/reviews" --paginate --slurp)
+          if ! jq -e --argjson id "$review_id" --arg sha "$approved_sha" '
+            (flatten(1)
+              | map(select(.user.id == 354714891 and
+                           (.state == "APPROVED" or .state == "CHANGES_REQUESTED" or .state == "DISMISSED")))
+              | max_by([.submitted_at, .id]))
+            | .id == $id and .state == "APPROVED" and .commit_id == $sha
+          ' <<< "$reviews" > /dev/null; then
+            echo 'Skipped: this review is no longer the latest effective approval.'
+            exit 0
+          fi
+
+          result=$(gh api "$pr_endpoint/merge" --method PUT -f merge_method=merge -f sha="$approved_sha")
+          if ! jq -e '.merged == true' <<< "$result" > /dev/null; then
+            echo '::error::GitHub did not merge the pull request.'
+            jq -r '.message // empty' <<< "$result" >&2
+            exit 1
+          fi
+          echo "Merged PR #$pr_number at approved head $approved_sha."
+          echo "pr_number=$pr_number" >> "$GITHUB_OUTPUT"
+
+      - name: Close linked issues
+        if: steps.merge_pr.outputs.pr_number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          PR_NUMBER: ${{ steps.merge_pr.outputs.pr_number }}
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          references=$(gh api graphql --paginate --slurp \
+            -f owner="${GITHUB_REPOSITORY%/*}" -f name="${GITHUB_REPOSITORY#*/}" \
+            -F number="$PR_NUMBER" -f query='
+            query($owner: String!, $name: String!, $number: Int!, $endCursor: String) {
+              repository(owner: $owner, name: $name) {
+                pullRequest(number: $number) {
+                  closingIssuesReferences(first: 100, after: $endCursor) {
+                    nodes { number state repository { nameWithOwner } }
+                    pageInfo { hasNextPage endCursor }
+                  }
+                }
+              }
+            }')
+          issue_numbers=$(jq -r --arg repo "$GITHUB_REPOSITORY" '
+            .[].data.repository.pullRequest.closingIssuesReferences.nodes[]
+            | select(.state == "OPEN" and
+                     (.repository.nameWithOwner | ascii_downcase) == ($repo | ascii_downcase))
+            | .number
+          ' <<< "$references")
+          if [[ -z "$issue_numbers" ]]; then
+            echo "No open issues to close for PR #$PR_NUMBER in this repository."
+            exit 0
+          fi
+
+          status=0
+          while IFS= read -r issue_number; do
+            if state=$(gh api "repos/$GITHUB_REPOSITORY/issues/$issue_number" --method PATCH \
+              -f state=closed -f state_reason=completed --jq '.state') && [[ "$state" == closed ]]; then
+              echo "Closed issue #$issue_number."
+            else
+              echo "::error::PR #$PR_NUMBER was merged, but issue #$issue_number could not be closed."
+              status=1
+            fi
+          done <<< "$issue_numbers"
+          exit "$status"
