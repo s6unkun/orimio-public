@@ -1,0 +1,25 @@
+[
+  {
+    "trigger": {
+      "url-filter": "^https?://([a-z0-9-]+\\.)*googlesyndication\\.com[:/]",
+      "resource-type": ["script", "image", "raw"],
+      "load-type": ["third-party"]
+    },
+    "action": {"type": "block"}
+  },
+  {
+    "trigger": {
+      "url-filter": "^https?://([a-z0-9-]+\\.)*doubleclick\\.net[:/]",
+      "resource-type": ["script", "image", "raw"],
+      "load-type": ["third-party"]
+    },
+    "action": {"type": "block"}
+  },
+  {
+    "trigger": {"url-filter": ".*"},
+    "action": {
+      "type": "css-display-none",
+      "selector": "ins.adsbygoogle, iframe[src^='https://googleads.g.doubleclick.net/'], iframe[src^='https://tpc.googlesyndication.com/']"
+    }
+  }
+]
