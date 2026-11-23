@@ -13,9 +13,15 @@ OrimioはiPhone向けのRSSリーダーです。このリポジトリでは、[�
 [`data/AdBlockingRules.json`](data/AdBlockingRules.json) は、Orimioの内部ブラウザーで使う[WebKitのコンテンツブロックルール](https://webkit.org/blog/3476/content-blockers-first-look/)です。公開後は、対応するOrimioを更新しなくても、次の起動後に記事を開いたときにアプリが更新を確認します。
 
 - 広告の通信を止める場合は、対象の配信元を識別する `url-filter` と、`load-type` の `third-party` を指定します。`resource-type` には `script`、`image`、`raw`、`media`、`style-sheet`、`font`、`svg-document` のうち必要なものを指定します。
-- 広告枠を隠す場合は `css-display-none` を使い、広告だけを識別できるセレクターを指定します。
-- 変更時はJSONを256 KiB以内に収め、空の配列にしないでください。WebKitでルールをコンパイルし、広告のオン・オフ、通常の本文・画像・記事内リンクを確認します。
+- 広告枠を隠す `css-display-none` には、対応アプリの許可リストにあるセレクターだけを指定します。セレクターを新たに許可する場合は、先に対応アプリを更新してください。受け入れ条件に合わないルールが1件でもあると、アプリは公開JSON全体の採用を見送り、最後に採用したルールか同梱ルールを使います。
+- JSONは256 KiB以内に収め、空の配列にしないでください。公開前に、配信対象のアプリ版に対応するOrimioのソースで、下のコマンドを実行します。アプリと同じ受け入れ条件とWebKitのコンパイルを確認できます。記事を開いて、広告のオン・オフと通常の本文・画像・リンクも確認してください。
 - マージ後は[GitHub Pagesの公開JSON](https://s6unkun.github.io/orimio-public/data/AdBlockingRules.json)を取得し、変更した内容が配信されることを確認します。
+
+以下は、macOS 26以降とXcodeを使い、Orimioのソースをこのリポジトリと同じ親フォルダーに置いた場合の例です。このリポジトリのルートで実行します。
+
+```sh
+bash ../orimio/apps/iOS/Tests/scripts/validate-ad-blocking-rules.sh data/AdBlockingRules.json
+```
 
 ## iOS版の配信情報
 
